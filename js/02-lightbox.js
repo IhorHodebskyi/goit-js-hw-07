@@ -21,15 +21,10 @@ function createImg(galleryItems) {
     })
     .join("");
 }
-list.addEventListener("click", onClick);
 
-function onClick(event) {
-  event.preventDefault();
-  if (event.target.nodeName !== "IMG") {
-    return;
-  }
   var lightbox = new SimpleLightbox(".gallery a", {
     captionDelay: 250,
     captionsData: "alt",
   });
-}
+
+
